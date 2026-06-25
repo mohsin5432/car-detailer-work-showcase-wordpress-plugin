@@ -1,0 +1,295 @@
+/**
+ * Car Detailers Showcase Gallery — Admin Styles
+ *
+ * @package Car_Detailers_Showcase
+ */
+
+/* ============================================
+   Settings Page
+   ============================================ */
+
+.rcg-settings-wrap {
+	max-width: 820px;
+}
+
+.rcg-settings-header {
+	margin-bottom: 24px;
+}
+
+.rcg-settings-header h1 {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	font-size: 24px;
+	font-weight: 600;
+}
+
+.rcg-settings-header h1 .dashicons {
+	font-size: 28px;
+	width: 28px;
+	height: 28px;
+	color: #3b82f6;
+}
+
+.rcg-settings-subtitle {
+	color: #666;
+	margin-top: 4px;
+	font-size: 14px;
+}
+
+.rcg-settings-card {
+	background: #fff;
+	border: 1px solid #e0e0e0;
+	border-radius: 8px;
+	padding: 24px;
+	margin-bottom: 20px;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.rcg-settings-card h2 {
+	margin: 0 0 16px 0;
+	padding: 0 0 12px 0;
+	border-bottom: 1px solid #f0f0f0;
+	font-size: 16px;
+	font-weight: 600;
+	color: #1d2327;
+}
+
+.rcg-settings-card .form-table th {
+	padding-top: 16px;
+	padding-bottom: 16px;
+	font-weight: 500;
+}
+
+.rcg-settings-card .form-table td {
+	padding-top: 12px;
+	padding-bottom: 12px;
+}
+
+/* Shortcode Reference */
+.rcg-shortcode-reference {
+	background: linear-gradient(135deg, #f8fafc 0%, #f0f4ff 100%);
+}
+
+.rcg-shortcode-examples {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.rcg-shortcode-example {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+	padding: 10px 14px;
+	background: #fff;
+	border-radius: 6px;
+	border: 1px solid #e8ecf0;
+}
+
+.rcg-shortcode-example code {
+	background: #1d2327;
+	color: #82d7ff;
+	padding: 5px 12px;
+	border-radius: 4px;
+	font-size: 13px;
+	white-space: nowrap;
+}
+
+.rcg-shortcode-example span {
+	color: #555;
+	font-size: 13px;
+}
+
+/* ============================================
+   Select Dropdown
+   ============================================ */
+
+.rcg-select {
+	width: 100%;
+	max-width: 300px;
+	padding: 8px 12px;
+	border: 1px solid #ccd0d4;
+	border-radius: 6px;
+	font-size: 14px;
+	background-color: #fff;
+	color: #1d2327;
+	transition: border-color 0.2s ease;
+}
+
+.rcg-select:focus {
+	border-color: #3b82f6;
+	outline: none;
+	box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.15);
+}
+
+/* ============================================
+   Work Done Meta Box
+   ============================================ */
+
+.rcg-work-done-wrap {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.rcg-work-done-wrap .rcg-select {
+	max-width: 100%;
+}
+
+.rcg-add-service-btn {
+	display: inline-flex;
+	align-items: center;
+	gap: 4px;
+	font-size: 12px !important;
+	padding: 4px 10px !important;
+}
+
+.rcg-add-service-btn .dashicons {
+	font-size: 16px;
+	width: 16px;
+	height: 16px;
+}
+
+/* ============================================
+   Photo Gallery Meta Box
+   ============================================ */
+
+.rcg-gallery-wrap {
+	padding: 4px 0;
+}
+
+.rcg-gallery-preview {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+	gap: 10px;
+	margin-bottom: 16px;
+	min-height: 40px;
+}
+
+.rcg-gallery-item {
+	position: relative;
+	border-radius: 8px;
+	overflow: hidden;
+	cursor: grab;
+	aspect-ratio: 1;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.rcg-gallery-item:hover {
+	transform: scale(1.03);
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.rcg-gallery-item:active {
+	cursor: grabbing;
+}
+
+.rcg-gallery-item img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+}
+
+.rcg-remove-img {
+	position: absolute;
+	top: 4px;
+	right: 4px;
+	background: rgba(220, 38, 38, 0.9);
+	color: #fff;
+	border: none;
+	border-radius: 50%;
+	width: 24px;
+	height: 24px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	opacity: 0;
+	transition: opacity 0.2s ease;
+	padding: 0;
+}
+
+.rcg-gallery-item:hover .rcg-remove-img {
+	opacity: 1;
+}
+
+.rcg-remove-img .dashicons {
+	font-size: 16px;
+	width: 16px;
+	height: 16px;
+}
+
+.rcg-gallery-actions {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+}
+
+.rcg-gallery-actions .button {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+}
+
+.rcg-gallery-actions .button .dashicons {
+	font-size: 18px;
+	width: 18px;
+	height: 18px;
+}
+
+.rcg-gallery-actions .description {
+	margin: 0;
+}
+
+/* Sortable placeholder */
+.rcg-gallery-preview .ui-sortable-placeholder {
+	background: #f0f4ff;
+	border: 2px dashed #3b82f6;
+	border-radius: 8px;
+	aspect-ratio: 1;
+	visibility: visible !important;
+}
+
+/* ============================================
+   Admin List Table Badges
+   ============================================ */
+
+.rcg-admin-badge {
+	display: inline-block;
+	background: linear-gradient(135deg, #3b82f6, #2563eb);
+	color: #fff;
+	padding: 3px 10px;
+	border-radius: 12px;
+	font-size: 12px;
+	font-weight: 500;
+	line-height: 1.4;
+}
+
+.rcg-photo-count {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	background: #f0f4ff;
+	color: #3b82f6;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	font-size: 13px;
+	font-weight: 600;
+}
+
+/* ============================================
+   Color Input
+   ============================================ */
+
+input[type="color"]#rcg_accent_color {
+	width: 50px;
+	height: 36px;
+	border: 1px solid #ccd0d4;
+	border-radius: 6px;
+	padding: 2px;
+	cursor: pointer;
+}
